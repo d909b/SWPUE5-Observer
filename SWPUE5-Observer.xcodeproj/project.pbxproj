@@ -1,0 +1,209 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD1C9603156CF5790020267B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD1C9602156CF5790020267B /* main.cpp */; };
+		CD1C9605156CF5790020267B /* SWPUE5_Observer.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = CD1C9604156CF5790020267B /* SWPUE5_Observer.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CD1C95FC156CF5790020267B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				CD1C9605156CF5790020267B /* SWPUE5_Observer.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CD1C95FE156CF5790020267B /* SWPUE5-Observer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "SWPUE5-Observer"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD1C9602156CF5790020267B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		CD1C9604156CF5790020267B /* SWPUE5_Observer.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = SWPUE5_Observer.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD1C95FB156CF5790020267B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD1C95F3156CF5790020267B = {
+			isa = PBXGroup;
+			children = (
+				CD1C9601156CF5790020267B /* SWPUE5-Observer */,
+				CD1C95FF156CF5790020267B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD1C95FF156CF5790020267B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD1C95FE156CF5790020267B /* SWPUE5-Observer */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD1C9601156CF5790020267B /* SWPUE5-Observer */ = {
+			isa = PBXGroup;
+			children = (
+				CD1C9602156CF5790020267B /* main.cpp */,
+				CD1C9604156CF5790020267B /* SWPUE5_Observer.1 */,
+			);
+			path = "SWPUE5-Observer";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD1C95FD156CF5790020267B /* SWPUE5-Observer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD1C9608156CF5790020267B /* Build configuration list for PBXNativeTarget "SWPUE5-Observer" */;
+			buildPhases = (
+				CD1C95FA156CF5790020267B /* Sources */,
+				CD1C95FB156CF5790020267B /* Frameworks */,
+				CD1C95FC156CF5790020267B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SWPUE5-Observer";
+			productName = "SWPUE5-Observer";
+			productReference = CD1C95FE156CF5790020267B /* SWPUE5-Observer */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD1C95F5156CF5790020267B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Patrick Schwab";
+			};
+			buildConfigurationList = CD1C95F8156CF5790020267B /* Build configuration list for PBXProject "SWPUE5-Observer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CD1C95F3156CF5790020267B;
+			productRefGroup = CD1C95FF156CF5790020267B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD1C95FD156CF5790020267B /* SWPUE5-Observer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD1C95FA156CF5790020267B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD1C9603156CF5790020267B /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CD1C9606156CF5790020267B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CD1C9607156CF5790020267B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CD1C9609156CF5790020267B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CD1C960A156CF5790020267B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD1C95F8156CF5790020267B /* Build configuration list for PBXProject "SWPUE5-Observer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD1C9606156CF5790020267B /* Debug */,
+				CD1C9607156CF5790020267B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD1C9608156CF5790020267B /* Build configuration list for PBXNativeTarget "SWPUE5-Observer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD1C9609156CF5790020267B /* Debug */,
+				CD1C960A156CF5790020267B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD1C95F5156CF5790020267B /* Project object */;
+}
