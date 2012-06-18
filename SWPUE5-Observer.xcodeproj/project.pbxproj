@@ -8,7 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		CD1C9603156CF5790020267B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD1C9602156CF5790020267B /* main.cpp */; };
-		CD1C9605156CF5790020267B /* SWPUE5_Observer.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = CD1C9604156CF5790020267B /* SWPUE5_Observer.1 */; };
+		CD1C960D156CF63B0020267B /* QtCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1C960B156CF63B0020267B /* QtCore.framework */; };
+		CD1C960E156CF63B0020267B /* QtGui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1C960C156CF63B0020267B /* QtGui.framework */; };
+		CD1C9612156CF6D20020267B /* ClockWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD1C9610156CF6D20020267B /* ClockWindow.cpp */; };
+		CD1C9615156CF6E10020267B /* ClockLabelWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD1C9613156CF6E10020267B /* ClockLabelWindow.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,7 +21,6 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				CD1C9605156CF5790020267B /* SWPUE5_Observer.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -27,7 +29,15 @@
 /* Begin PBXFileReference section */
 		CD1C95FE156CF5790020267B /* SWPUE5-Observer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "SWPUE5-Observer"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD1C9602156CF5790020267B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		CD1C9604156CF5790020267B /* SWPUE5_Observer.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = SWPUE5_Observer.1; sourceTree = "<group>"; };
+		CD1C960B156CF63B0020267B /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = Library/Frameworks/QtCore.framework; sourceTree = SDKROOT; };
+		CD1C960C156CF63B0020267B /* QtGui.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtGui.framework; path = Library/Frameworks/QtGui.framework; sourceTree = SDKROOT; };
+		CD1C9610156CF6D20020267B /* ClockWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ClockWindow.cpp; sourceTree = "<group>"; };
+		CD1C9611156CF6D20020267B /* ClockWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockWindow.h; sourceTree = "<group>"; };
+		CD1C9613156CF6E10020267B /* ClockLabelWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ClockLabelWindow.cpp; sourceTree = "<group>"; };
+		CD1C9614156CF6E10020267B /* ClockLabelWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockLabelWindow.h; sourceTree = "<group>"; };
+		CD1C9617156CFC720020267B /* ClockModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockModel.h; sourceTree = "<group>"; };
+		CD1C961A156CFD0D0020267B /* Observable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Observable.h; sourceTree = "<group>"; };
+		CD1C961D156CFD170020267B /* Observer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Observer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD1C960D156CF63B0020267B /* QtCore.framework in Frameworks */,
+				CD1C960E156CF63B0020267B /* QtGui.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +56,7 @@
 		CD1C95F3156CF5790020267B = {
 			isa = PBXGroup;
 			children = (
+				CD1C960F156CF6430020267B /* Libraries */,
 				CD1C9601156CF5790020267B /* SWPUE5-Observer */,
 				CD1C95FF156CF5790020267B /* Products */,
 			);
@@ -61,9 +74,24 @@
 			isa = PBXGroup;
 			children = (
 				CD1C9602156CF5790020267B /* main.cpp */,
-				CD1C9604156CF5790020267B /* SWPUE5_Observer.1 */,
+				CD1C9610156CF6D20020267B /* ClockWindow.cpp */,
+				CD1C9611156CF6D20020267B /* ClockWindow.h */,
+				CD1C9613156CF6E10020267B /* ClockLabelWindow.cpp */,
+				CD1C9614156CF6E10020267B /* ClockLabelWindow.h */,
+				CD1C9617156CFC720020267B /* ClockModel.h */,
+				CD1C961A156CFD0D0020267B /* Observable.h */,
+				CD1C961D156CFD170020267B /* Observer.h */,
 			);
 			path = "SWPUE5-Observer";
+			sourceTree = "<group>";
+		};
+		CD1C960F156CF6430020267B /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				CD1C960B156CF63B0020267B /* QtCore.framework */,
+				CD1C960C156CF63B0020267B /* QtGui.framework */,
+			);
+			name = Libraries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +146,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD1C9603156CF5790020267B /* main.cpp in Sources */,
+				CD1C9612156CF6D20020267B /* ClockWindow.cpp in Sources */,
+				CD1C9615156CF6E10020267B /* ClockLabelWindow.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
