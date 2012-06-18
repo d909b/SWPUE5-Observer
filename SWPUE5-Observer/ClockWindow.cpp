@@ -12,6 +12,9 @@
 #include "ClockWindow.h"
 #include <QtGui/QPainter.h>
 
+/**
+ *  Window constructor. Adds itself to the __model__'s observers.
+ */
 ClockWindow::ClockWindow(ClockModel* model) :
     model_(model)
 {
@@ -21,6 +24,8 @@ ClockWindow::ClockWindow(ClockModel* model) :
 }
 
 /**
+ * Paints the analogue clock according to the backing time model __model__.
+ *
  * Adapted from http://doc.qt.nokia.com/4.7/widgets-analogclock.html
  */
 void 
@@ -101,6 +106,10 @@ ClockWindow::paintEvent(QPaintEvent *event)
     painter.restore();
 }
 
+/** 
+ * Event received when the backing __model__ changes. 
+ * Triggers a new draw event.
+ */
 void 
 ClockWindow::valueChanged(Observable* observable)
 {

@@ -17,7 +17,9 @@
 /**
 * @class Observable
 *
-* ${DESCRIPTION}
+* This class represents an observable object.
+* Observable objects' state changes may be watched by Observers.
+* To notify an Observables' Observers notify() must be called after a state change.
 *
 * @author Patrick Schwab
 */
@@ -26,11 +28,21 @@ public:
 	Observable() {;}
     virtual ~Observable() {;}  
     
+    /**
+     * Registers an observer with the Observable object.
+     *
+     * @param observer The observer to be registered.
+     */
     void addObserver(Observer* observer) 
     {
         observers_.push_back(observer);
     }
     
+    /**
+     * Removes an observer from the list of observers.
+     *
+     * @param observer The Observer to be removed.
+     */
     void removeObserver(Observer* observer)
     {
         std::vector<Observer*>::iterator it;
@@ -45,6 +57,9 @@ public:
     }
     
 protected:
+    /**
+     *  Notifies the Observables' observers of state changes.
+     */
     void notify()
     {
         Q_FOREACH(Observer* observer, observers_)

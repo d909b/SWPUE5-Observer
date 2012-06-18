@@ -16,7 +16,8 @@
 /**
 * @class ClockModel
 *
-* ${DESCRIPTION}
+* This class represents a time model for clocks, including 
+* seconds, minutes and hours.
 *
 * @author Patrick Schwab
 */

@@ -13,6 +13,9 @@
 #include <QtGui/qboxlayout.h>
 #include "ClockLabelWindow.h"
 
+/**
+ *  Window constructor. Adds itself to the __model__'s observers.
+ */
 ClockLabelWindow::ClockLabelWindow(ClockModel* model) :
     model(model)
 {
@@ -35,6 +38,10 @@ ClockLabelWindow::ClockLabelWindow(ClockModel* model) :
     vbl->addWidget(label);
 }
 
+/** 
+ * Event received when the backing __model__ changes. 
+ * Triggers a new draw event.
+ */
 void 
 ClockLabelWindow::valueChanged(Observable* observable)
 {

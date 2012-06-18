@@ -19,6 +19,9 @@ public:
         ;
     }
 protected:
+    /**
+     *  Called every second to update the displayed time.
+     */
     void timerEvent(QTimerEvent *event)
     {
         int h = model_->getHours(), m = model_->getMinutes(), s = model_->getSeconds();
@@ -60,7 +63,7 @@ int main(int argc, char** argv)
     
     model->setTime(11, 0, 0);
     
-    /** 1 second intervals. */
+    /** 1 second interval. */
     app.startTimer(1000);
     
     window1.show();

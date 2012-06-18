@@ -20,7 +20,7 @@ class QLabel;
 /**
 * @class ClockLabelWindow
 *
-* ${DESCRIPTION}
+* This class implements a widget for displaying a clock model in digital form.
 *
 * @author Patrick Schwab
 */

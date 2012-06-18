@@ -18,7 +18,7 @@
 /**
 * @class ClockWindow
 *
-* ${DESCRIPTION}
+* This class implements a widget for displaying a clock model in analogue form.
 *
 * @author Patrick Schwab
 */

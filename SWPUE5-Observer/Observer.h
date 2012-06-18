@@ -16,11 +16,14 @@ class Observable;
 /**
 * @class Observer
 *
-* ${DESCRIPTION}
+* This interface represents an Observer watching over an Observable object's state changes.
 *
 * @author Patrick Schwab
 */
 class Observer {
 public:
+    /**
+     *  This callback is triggered on every state change of the observed Observable.
+     */
 	virtual void valueChanged(Observable* observable) = 0;
 };
